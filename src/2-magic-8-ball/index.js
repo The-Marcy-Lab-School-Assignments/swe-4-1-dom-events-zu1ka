@@ -36,12 +36,14 @@ TODO:
 
 const btn = document.querySelector('#ask-btn')
 const answer = document.querySelector("#answer")
-const eightBall = document.querySelector("#eight-ball")
+// const eightBall = document.querySelector("#eight-ball")
+const eight = document.querySelector("#eight")
 
 btn.addEventListener('click', () => {
   const random = Math.floor(Math.random() * fortunes.length)
-  answer.textContent = `${fortunes[random]}`
-  answer.style.display = "block"
 
+  answer.textContent = `${fortunes[random]}`
+  eight.style.display = "none"
+  answer.style.display = "block"
 })
 
